@@ -1,0 +1,29 @@
+﻿<Window x:Class="Hull_Speed.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hull_Speed"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="535.25">
+    <StackPanel Orientation="Horizontal">
+        <StackPanel Orientation="Vertical" Margin="0,0,0,0.5" Width="233">
+            <StackPanel Orientation="Horizontal">
+                <Label>Name: </Label>
+                <TextBox HorizontalAlignment="Center">Mary</TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label>Length: </Label>
+                <TextBox HorizontalAlignment="Center">27</TextBox>
+                <Label>feet</Label>
+            </StackPanel>
+            <Button HorizontalAlignment="Center">Calculate Hull Speed</Button>
+            <StackPanel Orientation="Horizontal">
+                <Label>Hull speed</Label>
+                <Label>7,0</Label>
+                <Label>knots</Label>
+            </StackPanel>
+        </StackPanel>
+        <Image Source="Sailboat.jpg" Margin="10, 0" />
+    </StackPanel>
+</Window>
