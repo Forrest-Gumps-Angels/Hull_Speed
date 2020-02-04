@@ -14,13 +14,13 @@
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <Label>Length: </Label>
-                <TextBox HorizontalAlignment="Center">27</TextBox>
+                <TextBox x:Name="Length_input" HorizontalAlignment="Center" TextChanged="TextBox_TextChanged">27</TextBox>
                 <Label>feet</Label>
             </StackPanel>
-            <Button HorizontalAlignment="Center">Calculate Hull Speed</Button>
+            <Button HorizontalAlignment="Center" Click="Button_Click">Calculate Hull Speed</Button>
             <StackPanel Orientation="Horizontal">
                 <Label>Hull speed</Label>
-                <Label>7,0</Label>
+                <Label x:Name="Speed_label">7,0</Label>
                 <Label>knots</Label>
             </StackPanel>
         </StackPanel>

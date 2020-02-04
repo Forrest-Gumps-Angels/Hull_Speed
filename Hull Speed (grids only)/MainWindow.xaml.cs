@@ -24,5 +24,11 @@ namespace Hull_Speed__grids_only_
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //Speed_label.Content = "Hej";
+            Speed_label.Content = (1.34 * System.Math.Sqrt(Double.Parse(Length_input.Text))).ToString();
+        }
     }
 }
