@@ -24,8 +24,8 @@
                     <ColumnDefinition Width="133*"/>
                     <ColumnDefinition Width="66*"/>
                 </Grid.ColumnDefinitions>
-                <Label Grid.Column="0">Name:</Label>
-                <TextBox Grid.Column="1" Grid.ColumnSpan="2" Margin="0,0,-0.5,0">Mary</TextBox>
+                <Label x:Name="Name_label" Grid.Column="0">Name:</Label>
+                <TextBox x:Name="Name_textbox" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,0,-0.5,0">Mary</TextBox>
             </Grid>
 
             <Grid Grid.Row="1" HorizontalAlignment="Left">
@@ -34,12 +34,12 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Label Grid.Column="0">Length:</Label>
+                <Label x:Name="Length_label" Grid.Column="0">Length:</Label>
                 <TextBox x:Name="Length_input" Grid.Column="1">27</TextBox>
-                <Label Grid.Column="2">feet</Label>
+                <Label x:Name="feet_label" Grid.Column="2">feet</Label>
             </Grid>
 
-            <Button Grid.Row="2" Width="200" HorizontalAlignment="Left" Margin="50,0,0,0" Click="Button_Click">Calculate Hull Speed</Button>
+            <Button x:Name="Calculate_button" Grid.Row="2" Width="200" HorizontalAlignment="Left" Margin="50,0,0,0" Click="Button_Click">Calculate Hull Speed</Button>
 
             <Grid Grid.Row="3" HorizontalAlignment="Left">
                 <Grid.ColumnDefinitions>
@@ -47,16 +47,16 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Label Grid.Column="0">Hull Speed</Label>
+                <Label x:Name="Hull_speed_label" Grid.Column="0">Hull Speed</Label>
                 <Label x:Name="Speed_label" Grid.Column="1">7,0</Label>
-                <Label Grid.Column="2">knots</Label>
+                <Label x:Name="Knots_label" Grid.Column="2">knots</Label>
             </Grid>
 
 
 
         </Grid>
 
-        <Image Grid.Column="1" Source="Sailboat.jpg" Margin="10,0"/>
+        <Image Grid.Column="1" Source="Sailboat.jpg" Margin="10,0" Name="Image_boat"/>
 
     </Grid>
 </Window>

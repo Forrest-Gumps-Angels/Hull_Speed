@@ -23,6 +23,44 @@ namespace Hull_Speed__grids_only_
         public MainWindow()
         {
             InitializeComponent();
+            this.KeyDown += Key_Pressed;
+            Image_boat.MouseDown += MouseDown_Image_boat;
+        }
+
+        private void MouseDown_Image_boat(object sender, MouseEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                MessageBox.Show($"The name of the ship is {Name_textbox.Text}");
+
+            }
+        }
+        private void Key_Pressed(object sender, KeyEventArgs e)
+        {
+            Console.WriteLine("YO");
+            if (e.Key == Key.L && Keyboard.IsKeyDown(Key.LeftCtrl))
+            {
+                Name_label.FontSize += 2;
+                Name_textbox.FontSize += 2;
+                Length_label.FontSize += 2;
+                Length_input.FontSize += 2;
+                Calculate_button.FontSize += 2;
+                Hull_speed_label.FontSize += 2;
+                Speed_label.FontSize += 2;
+                Knots_label.FontSize += 2;
+            }
+            else if (e.Key == Key.S && Keyboard.IsKeyDown(Key.LeftCtrl))
+            {
+                Name_label.FontSize -= 2;
+                Name_textbox.FontSize -= 2;
+                Length_label.FontSize -= 2;
+                Length_input.FontSize -= 2;
+                Calculate_button.FontSize -= 2;
+                Hull_speed_label.FontSize -= 2;
+                Speed_label.FontSize -= 2;
+                Knots_label.FontSize -= 2;
+            }
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
